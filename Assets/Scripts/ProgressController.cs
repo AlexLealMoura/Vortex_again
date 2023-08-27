@@ -6,15 +6,26 @@ using TMPro;
 
 public class ProgressController : MonoBehaviour
 {
-
+    public Image TimeBar;
     private int Nclick;
     private bool Tflag = false;
     //private float timeRemaining = 10;
     public float Tremaining = 10;
     public float Treset = 10;
+    private AudioSource UpgradeSound;
     [SerializeField] private int Price;
     [SerializeField] static public int Tclick = 1;
     [SerializeField] private TMP_Text counterText;
+    public GameObject FloatingPoint;
+
+    void Start()
+    {
+        UpgradeSound = GetComponent<AudioSource>();
+        if (UpgradeSound == null)
+        {
+            Debug.LogError("upgradeSfx nulo");
+        }
+    }
 
     void OnMouseDown()
     {
@@ -41,12 +52,16 @@ public class ProgressController : MonoBehaviour
             if (Tremaining >= 0)
             {
                 Tremaining -= Time.deltaTime;
+                TimeBar.fillAmount = Tremaining / Treset;
             }
             else
             {
                 Nclick += Tclick;
                 counterText.text = "" + Nclick;
                 Tremaining = Treset;
+                FloatingPoint.GetComponent<TextMesh>().text = Tclick.ToString();
+                Instantiate(FloatingPoint,  transform.position, Quaternion.identity);
+                UpgradeSound.Play();
             }
         }
     }

@@ -7,8 +7,18 @@ using TMPro;
 public class UpgradesController : MonoBehaviour
 {
     private int Nclick;
+    private AudioSource UpgradeSound;
     [SerializeField] private int Price;
     [SerializeField] private TMP_Text counterText;
+
+    void Start()
+    {
+        UpgradeSound = GetComponent<AudioSource>();
+        if (UpgradeSound == null)
+        {
+            Debug.LogError("upgradeSfx nulo");
+        }
+    }
 
     void OnMouseDown()
     {
@@ -19,6 +29,7 @@ public class UpgradesController : MonoBehaviour
             counterText.text = "" + Nclick;
             Price += 4; 
             ClickController.Pclick += 1;
+            UpgradeSound.Play();
         }
     }
 }

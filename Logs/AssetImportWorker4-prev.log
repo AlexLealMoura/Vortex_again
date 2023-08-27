@@ -9,13 +9,13 @@ D:\unityhub\2021.3.29f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker11
+AssetImportWorker4
 -projectPath
 D:/unityhub/Vortex again
 -logFile
-Logs/AssetImportWorker11.log
+Logs/AssetImportWorker4.log
 -srvPort
-52550
+64782
 Successfully changed project path to: D:/unityhub/Vortex again
 D:/unityhub/Vortex again
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ D:/unityhub/Vortex again
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [12488] Host "[IP] 192.168.1.7 [Port] 0 [Flags] 2 [Guid] 1425692508 [EditorId] 1425692508 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UEA2BHK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [17584] Host "[IP] 192.168.1.7 [Port] 0 [Flags] 2 [Guid] 2384303080 [EditorId] 2384303080 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UEA2BHK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [12488] Host "[IP] 192.168.1.7 [Port] 0 [Flags] 2 [Guid] 1425692508 [EditorId] 1425692508 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UEA2BHK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [17584] Host "[IP] 192.168.1.7 [Port] 0 [Flags] 2 [Guid] 2384303080 [EditorId] 2384303080 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UEA2BHK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 227.01 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 353.81 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.29f1 (204d6dc9ae1c)
 [Subsystems] Discovering subsystems at path D:/unityhub/2021.3.29f1/Editor/Data/Resources/UnitySubsystems
@@ -73,43 +73,43 @@ Registering precompiled unity dll's ...
 Register platform support module: D:/unityhub/2021.3.29f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: D:/unityhub/2021.3.29f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: D:/unityhub/2021.3.29f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006951 seconds.
+Registered in 0.005289 seconds.
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 1625 ms
-Refreshing native plugins compatible for Editor in 140.03 ms, found 4 plugins.
+Android Extension - Scanning For ADB Devices 463 ms
+Refreshing native plugins compatible for Editor in 153.86 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  4.505 seconds
+- Completed reload, in  1.826 seconds
 Domain Reload Profiling:
-	ReloadAssembly (4507ms)
-		BeginReloadAssembly (323ms)
+	ReloadAssembly (1827ms)
+		BeginReloadAssembly (185ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (3ms)
-		EndReloadAssembly (3354ms)
-			LoadAssemblies (326ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (1491ms)
+			LoadAssemblies (184ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (806ms)
+			SetupTypeCache (188ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (65ms)
-			SetupLoadedEditorAssemblies (2374ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (1181ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (1913ms)
+				InitializePlatformSupportModulesInManaged (717ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (140ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (188ms)
-				ProcessInitializeOnLoadMethodAttributes (130ms)
+				RefreshPlugins (154ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (173ms)
+				ProcessInitializeOnLoadMethodAttributes (134ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.011523 seconds.
+Registered in 0.011462 seconds.
