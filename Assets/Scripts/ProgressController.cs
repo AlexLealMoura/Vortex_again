@@ -16,6 +16,7 @@ public class ProgressController : MonoBehaviour
     [SerializeField] private int Price;
     [SerializeField] static public int Tclick = 1;
     [SerializeField] private TMP_Text counterText;
+    //[SerializeField] private TMP_Text ComboText;
     public GameObject FloatingPoint;
 
     void Start()

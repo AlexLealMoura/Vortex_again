@@ -10,7 +10,7 @@ public class ClickController : MonoBehaviour
     private AudioSource CoinSound;
     private int Nclick;
     [SerializeField] static public int Pclick = 1;
-    [SerializeField] private TMP_Text counterText;
+    [SerializeField] private TMP_Text CounterText;
 
     void Start()
 	{
@@ -25,10 +25,10 @@ public class ClickController : MonoBehaviour
     {
         FloatingPoint.GetComponent<TextMesh>().text = Pclick.ToString();
         Instantiate(FloatingPoint, transform.position, Quaternion.identity);
-        Nclick = int.Parse(counterText.text);
+        Nclick = int.Parse(CounterText.text);
         Nclick += Pclick;
         Debug.Log("Você clicou " + Nclick + " vezes!");
-        counterText.text = "" + Nclick;
+        CounterText.text = "" + Nclick;
         CoinSound.Play();
     }
 }
